@@ -7,9 +7,9 @@ int main(){
 	array.push_back(1);
 	array.push_back(2);
 	array.push_back(3);
-//	const
+	const
 	vector<int> &ref = array;
-	for(vector<int>::iterator it=ref.begin();it!=ref.end();++it){
+	for(vector<int>::const_iterator it=ref.begin();it!=ref.end();++it){
 		cout<<*it<<endl;
 	}
 }
